@@ -112,6 +112,7 @@ public class MainActivity extends Activity {
                 BitmapFactory.Options bmpFactoryOptions = new BitmapFactory.Options();
                 bmpFactoryOptions.inJustDecodeBounds = true;
                 Bitmap bmp = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageFileUri), null, bmpFactoryOptions);
+
                 int heightRatio = (int)Math.ceil(bmpFactoryOptions.outHeight/(float)dh);
                 int widthRatio = (int)Math.ceil(bmpFactoryOptions.outWidth/(float)dw);
                 Log.v("HEIGHTRATIO",""+heightRatio);
