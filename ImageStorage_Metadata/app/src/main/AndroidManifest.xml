@@ -17,5 +17,6 @@
             </intent-filter>
         </activity>
     </application>
+    <permission android:name="WRITE_EXTERNAL_STORAGE"/>
 
 </manifest>
