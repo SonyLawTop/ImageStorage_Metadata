@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sonylawtop.root.imagestorage_metadata" >
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -17,6 +19,5 @@
             </intent-filter>
         </activity>
     </application>
-    <permission android:name="WRITE_EXTERNAL_STORAGE"/>
 
 </manifest>
